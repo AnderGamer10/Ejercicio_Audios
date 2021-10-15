@@ -1,0 +1,5 @@
+*.log
+../Ejercicio_Audio/.idea
+.parcel-cache
+dist
+node_modules
