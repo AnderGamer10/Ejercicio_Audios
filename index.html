@@ -10,15 +10,19 @@
 <div id="header">
 <div id="logo"> <img src="images/micro.jpg" width="100px" height="90px"></img> </div>
 <div id="main-title"><h1> Radio patio </h1></div>
-<p>
- <div id="div_ma">
-  <a href="#" onclick="activarSonido()" class="material-icons">play_arrow </a>
-  <a href="#" class="material-icons">arrow_back </a>
-  <a href="#" class="material-icons">pause </a>
-  <a href="#" class="material-icons">arrow_forward </a>
-  <a href="#" class="material-icons">volume_up </a>
-  <a href="#" class="material-icons">volume_off </a>
- </div>
+ <p>
+<div id="div_ma">
+<audio src="Audios/AC-DC.mp3"></audio>
+<audio src="Audios/Aretha.mp3"></audio>
+<audio src="Audios/BobMarley.mp3"></audio>
+<audio src="Audios/RedHotChiliPeppers.mp3"></audio>
+ <a href="#" onclick="activarSonido()" class="material-icons">play_arrow </a>
+ <a href="#" onclick="anterior()" class="material-icons">arrow_back </a>
+ <a href="#" onclick="pararSonido()" class="material-icons">pause </a>
+ <a href="#" onclick="siguiente()" class="material-icons">arrow_forward </a>
+ <a href="#" onclick="activarVolumen()" class="material-icons">volume_up </a>
+ <a href="#" onclick="mutearVolumen()" class="material-icons">volume_off </a>
+</div>
 </p>
 
 </div>

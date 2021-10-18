@@ -2,11 +2,11 @@
 var i = 0;
 
 var audios = [
-  "audios/AC-DC.mp3",
-  "audios/Aretha.mp3",
-  "audios/Bob Marley.mp3",
-  "audios/Red Hot Chili Peppers.mp3"
-]
+  "AC-DC.adb9682d.mp3",
+  "Aretha.fa248ba0.mp3",
+  "BobMarley.82644948.mp3",
+  "RedHotChiliPeppers.9ac3a076.mp3"
+];
 
 var reproducir = new Audio();
 
@@ -14,51 +14,34 @@ function activarSonido(){
   reproducir = new Audio(audios[i]);
   reproducir.play();
 }
-function cambiarCancionIzquierda(){
-
-}
 function pararSonido(){
   reproducir.pause();
 }
-function cambiarCancionDerecho(){
-
-}
-function mutearVolumen(){
-
-}
-function activarVolumen(){
-
-}
-
-
 function anterior(){
-  repro.pause();
+  reproducir.pause();
   if(i <= 0){
-    i = canciones.length - 1;
+    i = audios.length - 1;
   }else{
     i--;
   }
-  repro = new Audio(canciones[i]);
-  repro.play();
+  reproducir = new Audio(audios[i]);
+  reproducir.play();
 }
 
-
 function siguiente(){
-  repro.pause();
-  if(i >= canciones.length){
+  reproducir.pause();
+  if(i >= audios.length){
     i = 0;
   }else{
     i++;
   }
-  repro = new Audio(canciones[i]);
-  repro.play();
+  reproducir = new Audio(audios[i]);
+  reproducir.play();
 }
 
-function volUp(){
-
+function mutearVolumen(){
+  repro.volume -= 0.1;
 }
-
-function volDown(){
-
+function activarVolumen(){
+  repro.volume += 0.1;
 }
-
